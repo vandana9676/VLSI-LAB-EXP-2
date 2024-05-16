@@ -26,26 +26,6 @@ ENCODER
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/3cd1f95e-7531-4cad-9154-fdd397ac439e)
 
-
-DECODER
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/45a5e6cf-bbe0-4fd5-ac84-e5ad4477483b)
-
-
-MULTIPLEXER
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/427f75b2-8e67-44b9-ac45-a66651787436)
-
-
-DEMULTIPLEXER
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/1c45a7fc-08ac-4f76-87f2-c084e7150557)
-
-
-MAGNITUDE COMPARATOR
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/b2fe7a05-6bf7-4dcb-8f5d-28abbf7ea8c2)
-
 ## VERILOG CODE
 ## 8-3 ENCODER:
 
@@ -60,7 +40,12 @@ or (b,d[2],d[3],d[6],d[7]);
 or (c,d[1],d[3],d[5],d[7]);
 
 endmodule
+## OUTPUT WAVEFORM:
+## ENCODER:
+![image](https://github.com/vandana9676/VLSI-LAB-EXP-2/assets/165563035/da6284b7-a84f-4fae-b587-f84c6b1109c7)
+DECODER
 
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/45a5e6cf-bbe0-4fd5-ac84-e5ad4477483b)
 ## 3-8 DECODER:
 module decoder(A,E,Y);
 
@@ -91,6 +76,13 @@ decoder_2_4 d1(A[1:0],~A[2],Y[3:0]);
 decoder_2_4 d2(A[1:0],~A[2],Y[7:4]);
 
 endmodule
+
+## DECODER:
+![image](https://github.com/vandana9676/VLSI-LAB-EXP-2/assets/165563035/c1e8425e-1196-4d80-b328-4be14f61f847)
+
+MULTIPLEXER
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/427f75b2-8e67-44b9-ac45-a66651787436)
 
 ## 8-1 MULTIPLEXER:
 module multi(i,s,y);
@@ -127,7 +119,12 @@ endcase
 end
 
 endmodule
+## MULTIPLEXER:
+![image](https://github.com/vandana9676/VLSI-LAB-EXP-2/assets/165563035/7ae02b4a-d118-4270-8ed2-03f3eb190824)
+## DEMULTIPLEXER:
+DEMULTIPLEXER
 
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/1c45a7fc-08ac-4f76-87f2-c084e7150557)
 ## 1-8 DEMULTIPLEXER:
 module demultiplexer(d1,d2,d3,d4,d5,d6,d7,d8,i,s0,s1,s2);
 
@@ -159,7 +156,12 @@ and g10(d7,s0,s1,w3,i);
 and g11(d8,s0,s1,s2,i);
 
 endmodule
+## DEMULTIPLEXER:
+![image](https://github.com/vandana9676/VLSI-LAB-EXP-2/assets/165563035/67648fab-658c-4065-b0ed-b96b9757f08b)
 
+MAGNITUDE COMPARATOR
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/b2fe7a05-6bf7-4dcb-8f5d-28abbf7ea8c2)
 ## 2 BIT MAGNITUDE COMPARATOR :
 module mag_com(a,b,gt,it,eq);
 
@@ -209,33 +211,9 @@ end
 end
 
 endmodule
-## OUTPUT WAVEFORM:
-## ENCODER:
-![image](https://github.com/vandana9676/VLSI-LAB-EXP-2/assets/165563035/da6284b7-a84f-4fae-b587-f84c6b1109c7)
-## DECODER:
-![image](https://github.com/vandana9676/VLSI-LAB-EXP-2/assets/165563035/c1e8425e-1196-4d80-b328-4be14f61f847)
-## MULTIPLEXER:
-![image](https://github.com/vandana9676/VLSI-LAB-EXP-2/assets/165563035/7ae02b4a-d118-4270-8ed2-03f3eb190824)
-## DEMULTIPLEXER:
-![image](https://github.com/vandana9676/VLSI-LAB-EXP-2/assets/165563035/67648fab-658c-4065-b0ed-b96b9757f08b)
 ## 2 BIT MAGNITUDE COMPARATOR:
 ![image](https://github.com/vandana9676/VLSI-LAB-EXP-2/assets/165563035/321571a2-d24d-45b4-8c7a-24a9e956b5bc)
 ## RESULT:
 Thus the simulation and synthesis of ENCODER, DECODER, MULTIPLEXER, DEMULTIPLEXER, 2bit MAGNITUDE COMPARATOR using vivado is successfully completed and executed.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-RESULT
 
 
